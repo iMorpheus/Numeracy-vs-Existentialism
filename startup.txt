@@ -1,0 +1,151 @@
+*title Numeracy vs Existentialism
+
+*create addition 0
+*create subtraction 0
+*create multiplication 0
+*create division 0
+*create name ""
+*create answer 0
+
+Please enter your name...
+*input_text name
+
+*page_break
+
+Good luck, ${name} You will not pass this test.
+Let's start with addition. Ready......Go.
+
+*page_break
+
+What is the sum of 2+2?
+*choice
+	#You cannot tell me what to do!
+		Eff the man and his rules! 
+		
+		Your game is over.
+
+		*stat_chart
+			percent Addition
+			percent Subtraction
+			percent Multiplication
+			percent Division
+		*ending
+	#We don't need no education!
+		Two.
+		
+		That's right! In your world, two is equivalent to four. Take that! Screw da system!
+		
+		[b]Your game is over.[/b]
+
+		*stat_chart
+			percent Addition
+			percent Subtraction
+			percent Multiplication
+			percent Division
+		*ending
+	#I hearby submit myself to da man.
+		Four. The answer is four.
+		
+		You feel dirty and weak.
+		
+		*set addition +1
+		*stat_chart
+			percent Addition
+			percent Subtraction
+			percent Multiplication
+			percent Division
+*page_break
+
+What is the sum of 10+10?
+
+*choice
+	#I am a rebel without a cause!
+		One-thousand two-hundred and forty-two!
+			
+		That's right! Free will!
+			
+		Your game is over.
+			
+		*set addition -1
+		*stat_chart
+			percent Addition
+			percent Subtraction
+			percent Multiplication
+			percent Division
+		*ending
+	#Baaaaaaa, I am sheeple.
+		You dutifully enter 20.
+		
+		Weak and pitiful.
+		*set addition +99
+		*stat_chart
+			percent Addition
+			percent Subtraction
+			percent Multiplication
+			percent Division
+		*page_break
+		*goto multiplication
+
+	#No! NO! [b]NO![/b]
+		You will not recognize the tyranny of public educaiton!
+		
+		You enter 
+		*input_text answer
+		*if answer != 10
+			Some people just don't learn.
+			
+			Oh well.
+			
+			[b]Game over.[/b]
+			
+			*stat_chart
+				percent Addition
+				percent Subtraction
+				percent Multiplication
+				percent Division
+			*ending
+		*else
+			That is correct!
+			
+			See, that wasn't so bad.
+		*set addition +98
+		*stat_chart
+			percent Addition
+			percent Subtraction
+			percent Multiplication
+			percent Division
+		*page_break
+		*goto multiplication
+
+*label multiplication
+
+[b]MULTIPLICATION[/b]
+
+If Michael runs five miles a day, how many miles will he cover in a year?
+*choice
+	#Fine, I am a spineless human.
+		You enter 1825.
+		
+		[b]You win?[/b]
+		*set multiplication 100
+		*set division 100
+		*set subtraction 100
+
+		You are obviously a stooge.
+		
+		Shame on you, ${name}. Shame on you.
+		*stat_chart
+			percent Addition
+			percent Subtraction
+			percent Multiplication
+			percent Division
+		
+		
+		I hope you are proud of yourself.
+		*ending
+
+*stat_chart
+	percent Addition
+	percent Subtraction
+	percent Multiplication
+	percent Division
