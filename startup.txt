@@ -1,4 +1,5 @@
 *title Numeracy vs Existentialism
+*author iMorpheus, aka Derek L. Arnwine
 
 *create addition 0
 *create subtraction 0
@@ -6,6 +7,12 @@
 *create division 0
 *create name ""
 *create answer 0
+
+*stat_chart
+	percent Addition
+	percent Subtraction
+	percent Multiplication
+	percent Division
 
 Please enter your name...
 *input_text name
@@ -16,7 +23,8 @@ Good luck, ${name} You will not pass this test.
 Let's start with addition. Ready......Go.
 
 *page_break
-
+[b]ADDITION[/b]
+*line_break
 What is the sum of 2+2?
 *choice
 	#You cannot tell me what to do!
@@ -65,8 +73,7 @@ What is the sum of 10+10?
 		That's right! Free will!
 			
 		Your game is over.
-			
-		*set addition -1
+
 		*stat_chart
 			percent Addition
 			percent Subtraction
@@ -108,7 +115,7 @@ What is the sum of 10+10?
 			That is correct!
 			
 			See, that wasn't so bad.
-		*set addition +98
+		*set addition +99
 		*stat_chart
 			percent Addition
 			percent Subtraction
