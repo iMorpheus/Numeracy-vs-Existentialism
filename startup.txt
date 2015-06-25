@@ -87,11 +87,11 @@ What is the sum of 10+10?
 		*goto multiplication
 
 	#No! NO! [b]NO![/b]
-		You will not recognize the tyranny of public educaiton!
+		You will not recognize the tyranny of public education!
 		
-		You enter 
+		Enter your answer: 
 		*input_text answer
-		*if answer != 10
+		*if answer != 20
 			Some people just don't learn.
 			
 			Oh well.
