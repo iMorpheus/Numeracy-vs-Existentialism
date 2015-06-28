@@ -132,6 +132,12 @@ If Michael runs five miles a day, how many miles will he cover in a year?
 		Shame on you, ${name}. Shame on you.
 		
 		I hope you are proud of yourself.
+		*stat_chart
+			percent Addition
+			percent Subtraction
+			percent Multiplication
+			percent Division		
+
 		*ending
 
 *stat_chart
