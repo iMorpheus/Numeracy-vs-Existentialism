@@ -8,12 +8,6 @@
 *create name ""
 *create answer 0
 
-*stat_chart
-	percent Addition
-	percent Subtraction
-	percent Multiplication
-	percent Division
-
 Please enter your name...
 *input_text name
 
@@ -74,11 +68,6 @@ What is the sum of 10+10?
 			
 		Your game is over.
 
-		*stat_chart
-			percent Addition
-			percent Subtraction
-			percent Multiplication
-			percent Division
 		*ending
 	#Baaaaaaa, I am sheeple.
 		You dutifully enter 20.
@@ -104,12 +93,7 @@ What is the sum of 10+10?
 			Oh well.
 			
 			[b]Game over.[/b]
-			
-			*stat_chart
-				percent Addition
-				percent Subtraction
-				percent Multiplication
-				percent Division
+
 			*ending
 		*else
 			That is correct!
@@ -141,12 +125,6 @@ If Michael runs five miles a day, how many miles will he cover in a year?
 		You are obviously a stooge.
 		
 		Shame on you, ${name}. Shame on you.
-		*stat_chart
-			percent Addition
-			percent Subtraction
-			percent Multiplication
-			percent Division
-		
 		
 		I hope you are proud of yourself.
 		*ending
