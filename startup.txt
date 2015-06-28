@@ -93,6 +93,11 @@ What is the sum of 10+10?
 			Oh well.
 			
 			[b]Game over.[/b]
+		*stat_chart
+			percent Addition
+			percent Subtraction
+			percent Multiplication
+			percent Division
 
 			*ending
 		*else
